@@ -7,7 +7,7 @@ Create a new free channel at [ScaleDrone.com](https://www.scaledrone.com/) or us
 
 ### Example
 
-[http://scaledrone.github.io/html5-javascript-push-notifications/](http://scaledrone.github.io/html5-javascript-push-notifications/)
+[https://sai3010.github.io/ScaleDrone-live-push/](https://sai3010.github.io/ScaleDrone-live-push/)
 
 ### Running
 
@@ -15,8 +15,8 @@ Clone this repository and run it using your favorite http server.
 
 You can push a notification from Terminal using `cURL`:
 ```
-curl --include \
-     --request POST \
-     --data-binary 'msg=Buy cheese and bread for breakfast.' \
-     https://api2.scaledrone.com/dIVCxD01G4x1sDtC/notifications/publish
+curl -H "Content-Type: application/json" \
+-X POST \
+-d '{"msg":"Hello!"}' \
+https://api2.scaledrone.com/2AbrIR7BniItM6um/notifications/publish
 ```
