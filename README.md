@@ -20,3 +20,5 @@ curl -H "Content-Type: application/json" \
 -d '{"msg":"Hello!"}' \
 https://api2.scaledrone.com/2AbrIR7BniItM6um/notifications/publish
 ```
+
+Images are hardcoded
