@@ -11,7 +11,7 @@
     You can push a notification from Terminal using cURL:
 
     <pre>
-        <p> working code</p>
+        <b><p> working code Image is hardcoded</p></b>
         <code>
             curl -H "Content-Type: application/json" \
 -X POST \
@@ -20,16 +20,23 @@
 https://api2.scaledrone.com/2AbrIR7BniItM6um/notifications/publish
          </code>
 
-         <p> code under testing</p>
+        <b> <p> Send with an image</p></b>
          <code2>
             curl -H "Content-Type: application/json" \
 -X POST \
--d '{"msg":"Hello!",
-        "title":"title!"
-}' \
+-d '{"msg":"Hello!", "url":" https://pbs.twimg.com/profile_images/832895558318694400/UH6Lt_k2.jpg"}' \
 https://api2.scaledrone.com/2AbrIR7BniItM6um/notifications/publish
          </code2>
+         <b><p>Send with title body etc</p></b>
+         <code3>
+curl -H "Content-Type: application/json" \
+-X POST \
+-d '{"msg":"Hello!", "title":" HIIIII"}' \
+https://api2.scaledrone.com/2AbrIR7BniItM6um/notifications/publish
+         </code3>
     </pre>
     <script src="main.js"></script>
 </body>
 </html>
+
+

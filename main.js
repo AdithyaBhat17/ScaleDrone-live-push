@@ -14,7 +14,9 @@ if (!Notification) {
             });
             room.on('data', function (data) {
                 // Create a new notification from incoming data
-                var notification = new Notification(data.msg);
+                //var notification = new Notification(data.msg);
+                var notification = new Notification(data.msg, {icon: 'bbg.jpg',title:data.title});
+                //var notification = new Notification(data.msg, {title: data.title});
                 //var notification = new Notification(data.msg,data.title);
                 // Hide it after 4 seconds
                 setTimeout(function () {
