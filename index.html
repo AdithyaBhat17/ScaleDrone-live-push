@@ -11,12 +11,24 @@
     You can push a notification from Terminal using cURL:
 
     <pre>
+        <p> working code</p>
         <code>
             curl -H "Content-Type: application/json" \
 -X POST \
--d '{"msg":"Hello!"}' \
+-d '{"msg":"Hello!"
+}' \
 https://api2.scaledrone.com/2AbrIR7BniItM6um/notifications/publish
          </code>
+
+         <p> code under testing</p>
+         <code2>
+            curl -H "Content-Type: application/json" \
+-X POST \
+-d '{"msg":"Hello!",
+        "title":"title!"
+}' \
+https://api2.scaledrone.com/2AbrIR7BniItM6um/notifications/publish
+         </code2>
     </pre>
     <script src="main.js"></script>
 </body>
