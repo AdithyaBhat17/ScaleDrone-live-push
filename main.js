@@ -12,9 +12,10 @@ if (!Notification) {
             room.on('open', function (error) {
                 if (error) console.error(error);
             });
-            room.on('data', function (data) {
+            room.on('data','url', function (data,url) {
                 // Create a new notification from incoming data
                 var notification = new Notification(data.msg);
+                var url = new Notification.badge(url.url);
                 // Hide it after 4 seconds
                 setTimeout(function () {
                     notification.close();
